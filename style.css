@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Machina";
+  src: url("./NeueMachina-Regular.otf");
+}
+
+.my-custom-font {
+  font-family: "Machina", sans-serif;
+}
+
+*::selection {
+  background-color: #EF9D71;
+}
+
+body[theme="black"] {
+  background-color: black;
+}
+
+body[theme="black"] .section{
+    color: #fff;
+  }
+
+body[theme="cyan"] {
+  background-color: rgb(104, 211, 228);
+}
+
+body[theme="cyan"] .section{
+    color: rgb(19, 63, 67);
+  }
+
+body[theme="salmon"] {
+  background-color: salmon;
+}
+
+body[theme="salmon"] .section{
+    color: rgb(74, 28, 25);
+  }
+
+body[theme="white"] {
+    background-color: #fff;
+}
+  
+body[theme="white"] .section{
+    color: #000;
+  } 
+
+
+
