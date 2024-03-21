@@ -15,9 +15,9 @@
   --salmon: #EF9D71;
   --black: #000;
   --white: #fff;
-  --cyan: rgb(104, 211, 228);
-  --dsalmon: rgb(74, 28, 25); /*dark salmon*/
-  --dcyan: rgb(19, 63, 67); /*dark cyan*/
+  --cyan: #AEDEE0;
+  --dsalmon: #4a1c19; /*dark salmon*/
+  --dcyan: #081b1d; /*dark cyan*/
 
 }
 
@@ -54,7 +54,7 @@ body[theme="white"] {
 }
   
 body[theme="white"] .section{
-    color: #000;
+    color: var(--black);
   } 
 
 
