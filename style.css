@@ -25,6 +25,8 @@
   background-color: var(--salmon);
 }
 
+
+
 body[theme="black"] {
   background-color: var(--black);
 }
@@ -56,6 +58,5 @@ body[theme="white"] {
 body[theme="white"] .section{
     color: var(--black);
   } 
-
 
 
