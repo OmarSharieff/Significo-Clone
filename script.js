@@ -31,8 +31,6 @@ function homePageAnimation() {
     ease: Power4,
   },'b')
 }
-homePageAnimation();
-
 function realPageAnimation() {
   gsap.to('.slide', {
     scrollTrigger: {
@@ -40,10 +38,23 @@ function realPageAnimation() {
       start: 'top top',
       end: 'bottom bottom',
       markers: true,
-      scrub: 2
+      scrub: 1
     },
     'xPercent': -200,
     ease: Power4
   })
 }
+function teamPageAnimation() {
+  document.querySelectorAll('.listelem')
+  .forEach((elem)=>{
+    elem.addEventListener('mousemove',function(dets){
+      gsap.to(this.querySelector('.picture'), {opacity: 1,x: gsap.utils.mapRange(0, window.innerWidth, -200, 200, dets.clientX) , ease: Power4, duration: .5})
+    })
+    elem.addEventListener('mouseleave',function(dets){
+      gsap.to(this.querySelector('.picture'), {opacity: 0, ease: Power4, duration: .5})
+    })
+  })  
+}
 realPageAnimation();
+homePageAnimation();
+teamPageAnimation();
