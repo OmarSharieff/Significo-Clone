@@ -21,6 +21,10 @@
 
 }
 
+body {
+  transition: background-color ease-out .7s;
+}
+
 *::selection {
   background-color: var(--salmon);
 }
